@@ -1,0 +1,104 @@
+:root {
+	--body-1: normal 14px/24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--body-2: normal 12px/16px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--header-1: bold 24px/32px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--header-2: bold 20px/28px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --neutral-1: 0, 0, 0;
+  --neutral-2: 255, 255, 255;
+  --accent-1: 60, 100, 240;
+  --accent-1b: 70, 110, 250;
+  --base-0: 255, 255, 255;
+  --base-1: 235, 235, 235;
+  --base-2: 245, 245, 245;
+  --base-3: 255, 255, 255;
+  --base-4: 255, 255, 255;
+  --functional-blue: 20, 120, 220;
+  --functional-red: 220, 40, 40;
+  --functional-yellow: 220, 168, 40;
+  --functional-green: 50, 168, 40;
+  --text-1: rgba(0, 0, 0, .90);
+  --text-2: rgba(0, 0, 0, .60);
+  --text-3: rgba(0, 0, 0, .20);
+	--functional-blue: 20, 120, 220;
+	--functional-red: 220, 40, 40;
+	--functional-yellow: 220, 160, 40;
+	--functional-green: 40, 160, 40;
+  --shadow-1: 0 2px 8px rgba(0,0,0,.1), 0 1px 4px rgba(0,0,0,.05);
+	--spacing-s: 8px;
+	--spacing-xs: calc(var(--spacing-s) / 2);
+	--spacing-m: calc(var(--spacing-s) * 1.5);
+	--spacing-l: calc(var(--spacing-s) * 2);
+}
+
+html,
+body {
+	font: var(--body-1);
+	line-height: 1.5rem;
+	color: var(--text-1);
+	height: auto !important;
+	padding: 1rem;
+	padding-bottom: 300px !important; /* allows scrolling past content */
+	overflow: auto;
+	margin: 0 auto;
+	max-width: 60rem; /* Adjust this value to set a maximum width */
+	text-rendering: optimizeLegibility;	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+div {
+	padding-bottom:1.5rem;
+}
+
+h1 {
+	font: var(--header-1);
+}
+
+h2 {
+	font: var(--header-2);
+}
+
+.widget {
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+
+pre,
+code {
+	line-height: 1rem;
+	font-size: var(--body-2);
+}
+
+#status-message {
+	color: rgba(var(--functional-blue), 1)
+}
+
+.text-output {
+	color: rgba(var(--functional-green), 1);
+}
+
+@media (prefers-color-scheme: dark) {
+* {
+		--neutral-1: 255, 255, 255;
+		--neutral-2: 0, 0, 0;
+		--accent-1: 60, 100, 240;
+		--accent-1b: 70, 110, 250;
+		--base-0: 0, 0, 2;
+		--base-1: 15, 15, 15;
+		--base-2: 25, 25, 25;
+		--base-3: 35, 35, 35;
+		--base-4: 45, 45, 45;
+		--functional-blue: 20, 120, 220;
+		--functional-red: 220, 40, 40;
+		--functional-yellow: 220, 160, 40;
+		--functional-green: 40, 160, 40;
+		--text-1: rgba(255, 255, 255, .90);
+		--text-2: rgba(255, 255, 255, .60);
+		--text-3: rgba(255, 255, 255, .20);
+		--shadow-1: 0 2px 8px rgba(0, 0, 0, .2), 0 1px 4px rgba(0, 0, 0, .15);
+	}
+
+body {
+	background-color: #1c1c1e;
+}
+}
