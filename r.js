@@ -1,4 +1,4 @@
-import { WebR } from 'https://webr.r-wasm.org/latest/webr.mjs'
+import { WebR } from './webr.mjs';
 
 // this can be accessed everywhere as "webR"
 globalThis.webR = new WebR();

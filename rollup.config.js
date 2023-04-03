@@ -13,6 +13,8 @@ export default [
 			format: 'es'
 		},
 		
+		external: [ 'https://cdn.jsdelivr.net/pyodide/v0.22.1/full/pyodide.mjs' ],
+
 		plugins: [
 			urlResolve({
 				cacheManager: '.cache',
@@ -25,7 +27,9 @@ export default [
 			terser(),
 			copy({
 				targets: [
-					{ src: '*.map', dest: 'build' }
+					{ src: 'webr-*', dest: 'build' },
+					{ src: 'R.*', dest: 'build' },
+					{ src: 'libR*', dest: 'build' }
 				]
 			})
 		]
